@@ -1,5 +1,7 @@
-import classes from "./style.module.css";
-export const QABox = () => {
+import classes from './style.module.css';
+
+export const ContainerQA = () => {
+    
     return(<>
     <div className={classes.main}>
         <form>
@@ -14,7 +16,9 @@ export const QABox = () => {
 
         </form>
     </div>
+    <button className={classes.add}>+ ADD QUESTION</button><br/>
+    <button className={classes.save}>SAVE AND SHARE</button>
     </>)
 }
 
-export default QABox;
+export default ContainerQA;
