@@ -1,0 +1,23 @@
+.add{
+    color:#C30008;
+    width:60%;
+    background-color:#F3F3F3;
+    font-weight:bold;
+    margin:1% 0% 1% 0%;
+    border:2px solid #7F7F7F;
+    padding:6px;
+    border-radius:3px;
+}
+
+.save{
+    color:white;
+    width:60%;
+    background-color:#BF0000;
+    font-weight:bold;
+    margin:0% 0% 1% 0%;
+    border:2px solid #7F7F7F;
+    padding:6px;
+    border-radius:3px;
+
+}
+

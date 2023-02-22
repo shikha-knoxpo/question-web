@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import ContainerQA from "../../components/ContainerQA"
+import ContainerQA from "../../components/Container"
 import TopBar from "../../components/TopBar"
 import { setTitle } from "../../redux/questionSlice"
 
