@@ -1,0 +1,31 @@
+.header{
+    width:full;
+    height:60px;
+    background-color:#BF0000;
+}
+
+.icon{
+    float:left;
+    height:30px;
+    width:30px;
+    margin:15px 10px 10px 20px;
+}
+
+.button{
+    float:right;
+    margin-right:30px;
+    margin-top:10px;
+}
+.input{
+    background:transparent;
+    border:none;
+    color:white;
+    margin-top:20px;
+    font-size:1rem;
+    
+}
+input:focus{
+    border:none;
+    outline:none;
+}
+
