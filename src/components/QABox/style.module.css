@@ -1,6 +1,47 @@
 .main{
-    margin:10% 20% 10% 20%;
+    margin:3% 20% 1% 20%;
     background-color:white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding:20px 20px 20px 20px;
+    text-align:left;
+    border-radius:3px;
 
+}
+
+.label{
+    font-weight:bold;
+    font-family:'Calibri';
+}
+
+.text{
+    border:2px solid #D3D3D3;
+    padding:10px;
+    width:auto;
+    border-radius:4px;
+    margin:5px 0 5px 0;
+    width:95%
+}
+
+.text:focus{
+    border:2px solid #7F7F7F;
+    
+}
+
+.answer{
+    background-color:#F3F3F3;
+}
+
+.select{
+    border:2px solid #D3D3D3;
+    padding:8px;
+    width:auto;
+    border-radius:4px;
+    margin:5px 0 5px 0;
+    color:#7F7F7F
+
+}
+
+.select:focus{
+    border:2px solid #7F7F7F;
+    
 }
