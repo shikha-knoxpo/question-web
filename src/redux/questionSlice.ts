@@ -23,11 +23,25 @@ export const questionListSlice = createSlice({
         },
       ];
      },
+     reOrderQAUp:(state,action )=>{
+      if(action.payload !== 0){
+        const temp = state.list[action.payload];
+      state.list[action.payload ] =state.list[action.payload - 1];
+      state.list[action.payload -1 ]=temp;
+      }
+      
+     },
+     reOderQADown: (state,action) =>{
+      if(action.payload+1 !== state.list.length){const temp = state.list[action.payload];
+        state.list[action.payload ] =state.list[action.payload + 1];
+        state.list[action.payload + 1 ]=temp;}
+      
+     },
      delQA:(state,action) =>{
         state.list=state.list.filter((e:any)=>e.id !== action.payload)
      }
   },
 });
 
-export const { setTitle, addQA,delQA } = questionListSlice.actions;
+export const { setTitle, addQA,delQA,reOderQADown,reOrderQAUp } = questionListSlice.actions;
 export default questionListSlice.reducer;

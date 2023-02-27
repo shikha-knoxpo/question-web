@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Questionaire, QuestionAnswerList } from "../../redux/model";
 import classes from "./style.module.css";
-import { delQA } from "../../redux/questionSlice";
+import { delQA, reOderQADown, reOrderQAUp } from "../../redux/questionSlice";
 import deleteButton from "./assets/delete.png";
 import down from "./assets/downButton.png";
 import up from "./assets/upButton.png";
@@ -13,15 +13,19 @@ export const ListOfQA = () => {
     dispatch(delQA(e));
   };
 
-  const onUpHandler = (e: string) => {};
-  const onDownHandler = (e: string) => {};
+  const onUpHandler = (e: number) => {
+    dispatch(reOrderQAUp(e))
+  };
+  const onDownHandler = (e: number) => {
+    dispatch(reOderQADown(e));
+  };
   return (
     <>
       {state.list.length > 0 && <h5>List Of all the Questions</h5>}
       {state.list.map(
         (
           e: { id: string; question: string; answer: string },
-          index: string
+          index: number
         ) => {
           return (
             <div className={classes.main} key={index}>
@@ -64,14 +68,14 @@ export const ListOfQA = () => {
                   <button
                     className={classes.del}
                     type="button"
-                    onClick={() => onDownHandler(e.id)}
+                    onClick={() => onDownHandler(index)}
                   >
                     <img src={down}></img>
                   </button>
                   <button
                     className={classes.del}
                     type="button"
-                    onClick={() => onUpHandler(e.id)}
+                    onClick={() => onUpHandler(index)}
                   >
                     <img src={up}></img>
                   </button>
