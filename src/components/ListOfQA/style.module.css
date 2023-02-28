@@ -24,6 +24,16 @@
   font-family: "Calibri";
 }
 
+.of {
+  color: grey;
+  padding-right: 82%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .of {
+    padding-right: 72%;
+  }
+}
 .text {
   border: 2px solid #d3d3d3;
   padding: 10px;

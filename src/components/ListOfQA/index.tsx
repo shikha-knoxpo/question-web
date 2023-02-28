@@ -14,7 +14,7 @@ export const ListOfQA = () => {
   };
 
   const onUpHandler = (e: number) => {
-    dispatch(reOrderQAUp(e))
+    dispatch(reOrderQAUp(e));
   };
   const onDownHandler = (e: number) => {
     dispatch(reOderQADown(e));
@@ -79,6 +79,9 @@ export const ListOfQA = () => {
                   >
                     <img src={up}></img>
                   </button>
+                  <p className={classes.of}>
+                    {index + 1} of {state.list.length}
+                  </p>
                 </div>
 
                 <br />
