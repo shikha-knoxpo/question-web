@@ -24,6 +24,15 @@
   font-family: "Calibri";
 }
 
+.hr {
+  background-color: grey;
+  color: grey;
+  border: none;
+  height: 1px;
+  width: auto;
+  margin-right: 2%;
+}
+
 .of {
   color: grey;
   padding-right: 82%;

@@ -42,6 +42,7 @@ export const ListOfQA = () => {
                   value={e.question}
                 ></input>
                 <br />
+                <hr className={classes.hr} />
                 <br />
 
                 <label className={classes.label}>Answer</label>
@@ -56,6 +57,7 @@ export const ListOfQA = () => {
                   placeholder="Short Answer Text"
                   value={e.answer}
                 ></input>
+                <hr className={classes.hr} />
                 <br />
                 <div className={classes.buttons}>
                   <button

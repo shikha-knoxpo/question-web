@@ -51,6 +51,7 @@ export const QABox: React.FC<{}> = (props) => {
             placeholder="What do you want to ask?"
           ></input>
           <br />
+          <hr className={classes.hr} />
           <br />
 
           <label htmlFor="answer" className={classes.label}>
@@ -71,6 +72,7 @@ export const QABox: React.FC<{}> = (props) => {
             placeholder="Short Answer Text"
           ></input>
           <br />
+          <hr className={classes.hr} />
           <br />
         </form>
       </div>
